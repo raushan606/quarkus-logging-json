@@ -1,0 +1,387 @@
+
+:summaryTableId: quarkus-log-json
+[.configuration-legend]
+icon:lock[title=Fixed at build time] Configuration property fixed at build time - All other configuration properties are overridable at runtime
+[.configuration-reference.searchable, cols="80,.^10,.^10"]
+|===
+
+h|[[quarkus-log-json_configuration]]link:#quarkus-log-json_configuration[Configuration property]
+
+h|Type
+h|Default
+
+a| [[quarkus-log-json_quarkus-log-json-console-enable]]`link:#quarkus-log-json_quarkus-log-json-console-enable[quarkus.log.json.console.enable]`
+
+
+[.description]
+--
+Determine whether to enable the JSON console formatting extension, which disables "normal" console formatting.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_LOG_JSON_CONSOLE_ENABLE+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_LOG_JSON_CONSOLE_ENABLE+++`
+endif::add-copy-button-to-env-var[]
+--|boolean 
+|`true`
+
+
+a| [[quarkus-log-json_quarkus-log-json-fields-timestamp-field-name]]`link:#quarkus-log-json_quarkus-log-json-fields-timestamp-field-name[quarkus.log.json.fields.timestamp.field-name]`
+
+
+[.description]
+--
+Used to change the json key for the field.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_LOG_JSON_FIELDS_TIMESTAMP_FIELD_NAME+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_LOG_JSON_FIELDS_TIMESTAMP_FIELD_NAME+++`
+endif::add-copy-button-to-env-var[]
+--|string 
+|
+
+
+a| [[quarkus-log-json_quarkus-log-json-fields-timestamp-date-format]]`link:#quarkus-log-json_quarkus-log-json-fields-timestamp-date-format[quarkus.log.json.fields.timestamp.date-format]`
+
+
+[.description]
+--
+The date format to use. The special string "default" indicates that the default format should be used.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_LOG_JSON_FIELDS_TIMESTAMP_DATE_FORMAT+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_LOG_JSON_FIELDS_TIMESTAMP_DATE_FORMAT+++`
+endif::add-copy-button-to-env-var[]
+--|string 
+|`default`
+
+
+a| [[quarkus-log-json_quarkus-log-json-fields-timestamp-zone-id]]`link:#quarkus-log-json_quarkus-log-json-fields-timestamp-zone-id[quarkus.log.json.fields.timestamp.zone-id]`
+
+
+[.description]
+--
+The zone to use when formatting the timestamp.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_LOG_JSON_FIELDS_TIMESTAMP_ZONE_ID+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_LOG_JSON_FIELDS_TIMESTAMP_ZONE_ID+++`
+endif::add-copy-button-to-env-var[]
+--|string 
+|`default`
+
+
+a| [[quarkus-log-json_quarkus-log-json-fields-timestamp-enabled]]`link:#quarkus-log-json_quarkus-log-json-fields-timestamp-enabled[quarkus.log.json.fields.timestamp.enabled]`
+
+
+[.description]
+--
+Enable or disable the field.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_LOG_JSON_FIELDS_TIMESTAMP_ENABLED+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_LOG_JSON_FIELDS_TIMESTAMP_ENABLED+++`
+endif::add-copy-button-to-env-var[]
+--|boolean 
+|`true`
+
+
+a| [[quarkus-log-json_quarkus-log-json-fields-logger-name-field-name]]`link:#quarkus-log-json_quarkus-log-json-fields-logger-name-field-name[quarkus.log.json.fields.logger-name.field-name]`
+
+
+[.description]
+--
+Used to change the json key for the field.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_LOG_JSON_FIELDS_LOGGER_NAME_FIELD_NAME+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_LOG_JSON_FIELDS_LOGGER_NAME_FIELD_NAME+++`
+endif::add-copy-button-to-env-var[]
+--|string 
+|
+
+
+a| [[quarkus-log-json_quarkus-log-json-fields-logger-name-enabled]]`link:#quarkus-log-json_quarkus-log-json-fields-logger-name-enabled[quarkus.log.json.fields.logger-name.enabled]`
+
+
+[.description]
+--
+Enable or disable the field.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_LOG_JSON_FIELDS_LOGGER_NAME_ENABLED+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_LOG_JSON_FIELDS_LOGGER_NAME_ENABLED+++`
+endif::add-copy-button-to-env-var[]
+--|boolean 
+|
+
+
+a| [[quarkus-log-json_quarkus-log-json-fields-level-field-name]]`link:#quarkus-log-json_quarkus-log-json-fields-level-field-name[quarkus.log.json.fields.level.field-name]`
+
+
+[.description]
+--
+Used to change the json key for the field.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_LOG_JSON_FIELDS_LEVEL_FIELD_NAME+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_LOG_JSON_FIELDS_LEVEL_FIELD_NAME+++`
+endif::add-copy-button-to-env-var[]
+--|string 
+|
+
+
+a| [[quarkus-log-json_quarkus-log-json-fields-level-enabled]]`link:#quarkus-log-json_quarkus-log-json-fields-level-enabled[quarkus.log.json.fields.level.enabled]`
+
+
+[.description]
+--
+Enable or disable the field.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_LOG_JSON_FIELDS_LEVEL_ENABLED+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_LOG_JSON_FIELDS_LEVEL_ENABLED+++`
+endif::add-copy-button-to-env-var[]
+--|boolean 
+|
+
+
+a| [[quarkus-log-json_quarkus-log-json-fields-message-field-name]]`link:#quarkus-log-json_quarkus-log-json-fields-message-field-name[quarkus.log.json.fields.message.field-name]`
+
+
+[.description]
+--
+Used to change the json key for the field.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_LOG_JSON_FIELDS_MESSAGE_FIELD_NAME+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_LOG_JSON_FIELDS_MESSAGE_FIELD_NAME+++`
+endif::add-copy-button-to-env-var[]
+--|string 
+|
+
+
+a| [[quarkus-log-json_quarkus-log-json-fields-message-enabled]]`link:#quarkus-log-json_quarkus-log-json-fields-message-enabled[quarkus.log.json.fields.message.enabled]`
+
+
+[.description]
+--
+Enable or disable the field.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_LOG_JSON_FIELDS_MESSAGE_ENABLED+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_LOG_JSON_FIELDS_MESSAGE_ENABLED+++`
+endif::add-copy-button-to-env-var[]
+--|boolean 
+|
+
+
+a| [[quarkus-log-json_quarkus-log-json-fields-thread-name-field-name]]`link:#quarkus-log-json_quarkus-log-json-fields-thread-name-field-name[quarkus.log.json.fields.thread-name.field-name]`
+
+
+[.description]
+--
+Used to change the json key for the field.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_LOG_JSON_FIELDS_THREAD_NAME_FIELD_NAME+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_LOG_JSON_FIELDS_THREAD_NAME_FIELD_NAME+++`
+endif::add-copy-button-to-env-var[]
+--|string 
+|
+
+
+a| [[quarkus-log-json_quarkus-log-json-fields-thread-name-enabled]]`link:#quarkus-log-json_quarkus-log-json-fields-thread-name-enabled[quarkus.log.json.fields.thread-name.enabled]`
+
+
+[.description]
+--
+Enable or disable the field.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_LOG_JSON_FIELDS_THREAD_NAME_ENABLED+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_LOG_JSON_FIELDS_THREAD_NAME_ENABLED+++`
+endif::add-copy-button-to-env-var[]
+--|boolean 
+|
+
+
+a| [[quarkus-log-json_quarkus-log-json-fields-thread-id-field-name]]`link:#quarkus-log-json_quarkus-log-json-fields-thread-id-field-name[quarkus.log.json.fields.thread-id.field-name]`
+
+
+[.description]
+--
+Used to change the json key for the field.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_LOG_JSON_FIELDS_THREAD_ID_FIELD_NAME+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_LOG_JSON_FIELDS_THREAD_ID_FIELD_NAME+++`
+endif::add-copy-button-to-env-var[]
+--|string 
+|
+
+
+a| [[quarkus-log-json_quarkus-log-json-fields-thread-id-enabled]]`link:#quarkus-log-json_quarkus-log-json-fields-thread-id-enabled[quarkus.log.json.fields.thread-id.enabled]`
+
+
+[.description]
+--
+Enable or disable the field.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_LOG_JSON_FIELDS_THREAD_ID_ENABLED+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_LOG_JSON_FIELDS_THREAD_ID_ENABLED+++`
+endif::add-copy-button-to-env-var[]
+--|boolean 
+|
+
+
+a| [[quarkus-log-json_quarkus-log-json-fields-throwable-field-name]]`link:#quarkus-log-json_quarkus-log-json-fields-throwable-field-name[quarkus.log.json.fields.throwable.field-name]`
+
+
+[.description]
+--
+Used to change the json key for the field.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_LOG_JSON_FIELDS_THROWABLE_FIELD_NAME+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_LOG_JSON_FIELDS_THROWABLE_FIELD_NAME+++`
+endif::add-copy-button-to-env-var[]
+--|string 
+|
+
+
+a| [[quarkus-log-json_quarkus-log-json-fields-throwable-enabled]]`link:#quarkus-log-json_quarkus-log-json-fields-throwable-enabled[quarkus.log.json.fields.throwable.enabled]`
+
+
+[.description]
+--
+Enable or disable the field.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_LOG_JSON_FIELDS_THROWABLE_ENABLED+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_LOG_JSON_FIELDS_THROWABLE_ENABLED+++`
+endif::add-copy-button-to-env-var[]
+--|boolean 
+|`true`
+
+
+a| [[quarkus-log-json_quarkus-log-json-fields-throwable-stack-trace-field-name]]`link:#quarkus-log-json_quarkus-log-json-fields-throwable-stack-trace-field-name[quarkus.log.json.fields.throwable.stack-trace.field-name]`
+
+
+[.description]
+--
+Used to change the json key for the field.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_LOG_JSON_FIELDS_THROWABLE_STACK_TRACE_FIELD_NAME+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_LOG_JSON_FIELDS_THROWABLE_STACK_TRACE_FIELD_NAME+++`
+endif::add-copy-button-to-env-var[]
+--|string 
+|
+
+
+a| [[quarkus-log-json_quarkus-log-json-fields-throwable-stack-trace-enabled]]`link:#quarkus-log-json_quarkus-log-json-fields-throwable-stack-trace-enabled[quarkus.log.json.fields.throwable.stack-trace.enabled]`
+
+
+[.description]
+--
+Enable or disable the field.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_LOG_JSON_FIELDS_THROWABLE_STACK_TRACE_ENABLED+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_LOG_JSON_FIELDS_THROWABLE_STACK_TRACE_ENABLED+++`
+endif::add-copy-button-to-env-var[]
+--|boolean 
+|
+
+
+a| [[quarkus-log-json_quarkus-log-json-fields-throwable-exception-field-name]]`link:#quarkus-log-json_quarkus-log-json-fields-throwable-exception-field-name[quarkus.log.json.fields.throwable.exception.field-name]`
+
+
+[.description]
+--
+Used to change the json key for the field.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_LOG_JSON_FIELDS_THROWABLE_EXCEPTION_FIELD_NAME+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_LOG_JSON_FIELDS_THROWABLE_EXCEPTION_FIELD_NAME+++`
+endif::add-copy-button-to-env-var[]
+--|string 
+|
+
+
+a| [[quarkus-log-json_quarkus-log-json-fields-throwable-exception-enabled]]`link:#quarkus-log-json_quarkus-log-json-fields-throwable-exception-enabled[quarkus.log.json.fields.throwable.exception.enabled]`
+
+
+[.description]
+--
+Enable or disable the field.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_LOG_JSON_FIELDS_THROWABLE_EXCEPTION_ENABLED+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_LOG_JSON_FIELDS_THROWABLE_EXCEPTION_ENABLED+++`
+endif::add-copy-button-to-env-var[]
+--|boolean 
+|
+
+
+a| [[quarkus-log-json_quarkus-log-json-record-delimiter]]`link:#quarkus-log-json_quarkus-log-json-record-delimiter[quarkus.log.json.record-delimiter]`
+
+
+[.description]
+--
+The special end-of-record delimiter to be used. By default, newline delimiter is used.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_LOG_JSON_RECORD_DELIMITER+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_LOG_JSON_RECORD_DELIMITER+++`
+endif::add-copy-button-to-env-var[]
+--|string 
+|`
+`
+
+|===
