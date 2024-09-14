@@ -1,5 +1,9 @@
 package fish.payara.loggingjson.deployment;
 
+import java.util.Collection;
+
+import org.jboss.jandex.ClassInfo;
+
 import fish.payara.loggingjson.JsonFactory;
 import fish.payara.loggingjson.LoggingJsonRecorder;
 import fish.payara.loggingjson.config.Config;
@@ -15,9 +19,6 @@ import io.quarkus.deployment.annotations.Record;
 import io.quarkus.deployment.builditem.CombinedIndexBuildItem;
 import io.quarkus.deployment.builditem.FeatureBuildItem;
 import io.quarkus.deployment.builditem.LogConsoleFormatBuildItem;
-import org.jboss.jandex.ClassInfo;
-
-import java.util.Collection;
 
 class LoggingJsonProcessor {
 
