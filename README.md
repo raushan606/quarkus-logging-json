@@ -49,23 +49,23 @@ argument in json.
 ## Simple usage
 
 ```java
-import static io.quarkiverse.loggingjson.providers.KeyValueStructuredArgument.*;
+
 ...
-log.info("Test log of structured arg", kv("key", "value"));
+        log.info("Test log of structured arg",kv("key", "value"));
 ```
 
 # Custom log handler
 
 If you want to add your own custom way to handle the LogRecords.
-You can create your own implementations of `io.quarkiverse.loggingjson.JsonProvider`, and provide it using CDI.
+You can create your own implementations of `fish.payara.loggingjson.JsonProvider`, and provide it using CDI.
 Example implementation:
 
 ```java
 import jakarta.inject.Singleton;
 import java.io.IOException;
 
-import io.quarkiverse.loggingjson.JsonProvider;
-import io.quarkiverse.loggingjson.JsonGenerator;
+import fish.payara.loggingjson.JsonProvider;
+import fish.payara.loggingjson.JsonGenerator;
 import org.jboss.logmanager.ExtLogRecord;
 
 @Singleton
