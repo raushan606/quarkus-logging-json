@@ -1,5 +1,8 @@
 package io.quarkiverse.loggingjson.providers;
 
+import static java.util.logging.Level.SEVERE;
+import static java.util.logging.Level.WARNING;
+
 import java.io.IOException;
 
 import org.jboss.logmanager.ExtLogRecord;
@@ -25,7 +28,17 @@ public class LogLevelJsonProvider implements JsonProvider, Enabled {
 
     @Override
     public void writeTo(JsonGenerator generator, ExtLogRecord event) throws IOException {
-        JsonWritingUtils.writeStringField(generator, fieldName, event.getLevel().toString());
+        switch (event.getLevel().getName()) {
+            case "ERROR":
+                JsonWritingUtils.writeStringField(generator, fieldName, String.valueOf(SEVERE));
+                break;
+            case "WARN":
+                JsonWritingUtils.writeStringField(generator, fieldName, String.valueOf(WARNING));
+                break;
+            default:
+                JsonWritingUtils.writeStringField(generator, fieldName, event.getLevel().toString());
+        }
+
     }
 
     @Override

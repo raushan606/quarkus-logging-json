@@ -1,0 +1,13 @@
+---
+name: "Logging JSON Jackson"
+metadata:
+  keywords:
+    - "logging"
+    - "json"
+    - "formatter"
+  categories:
+    - "logging"
+  config:
+    - "quarkus.log.json."
+  status: "preview"
+  guide: "https://docs.quarkiverse.io/quarkus-logging-json/dev/index.html"

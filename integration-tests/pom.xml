@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>io.quarkiverse.loggingjson</groupId>
+        <groupId>fish.payara.loggingjson</groupId>
         <artifactId>quarkus-logging-json-parent</artifactId>
-        <version>3.1.1-SNAPSHOT</version>
+        <version>3.0.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -29,7 +29,7 @@
             <artifactId>quarkus-jackson</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.quarkiverse.loggingjson</groupId>
+            <groupId>fish.payara.loggingjson</groupId>
             <artifactId>quarkus-logging-json</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -74,7 +74,7 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>io.quarkiverse.loggingjson</groupId>
+            <groupId>fish.payara.loggingjson</groupId>
             <artifactId>quarkus-logging-json-deployment</artifactId>
             <version>${project.version}</version>
             <type>pom</type>

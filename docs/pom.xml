@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>io.quarkiverse.loggingjson</groupId>
+        <groupId>fish.payara.loggingjson</groupId>
         <artifactId>quarkus-logging-json-parent</artifactId>
-        <version>3.1.1-SNAPSHOT</version>
+        <version>3.0.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -15,7 +15,7 @@
     <dependencies>
         <!-- Make sure the doc is built after the other artifacts -->
         <dependency>
-            <groupId>io.quarkiverse.loggingjson</groupId>
+            <groupId>fish.payara.loggingjson</groupId>
             <artifactId>quarkus-logging-json-integration-tests</artifactId>
             <version>${project.version}</version>
             <optional>true</optional>

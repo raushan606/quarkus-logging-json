@@ -106,7 +106,7 @@ public abstract class JsonDefaultFormatterBaseTest {
         Assertions.assertEquals("JsonStructuredTest", jsonNode.findValue("LoggerName").asText());
 
         Assertions.assertTrue(jsonNode.findValue("Level").isTextual());
-        Assertions.assertEquals("ERROR", jsonNode.findValue("Level").asText());
+        Assertions.assertEquals("SEVERE", jsonNode.findValue("Level").asText());
 
         Assertions.assertTrue(jsonNode.findValue("LogMessage").isTextual());
         Assertions.assertEquals("Test message", jsonNode.findValue("LogMessage").asText());
