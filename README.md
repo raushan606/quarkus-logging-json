@@ -1,9 +1,4 @@
 [![Maven Central](https://img.shields.io/maven-central/v/io.quarkiverse.loggingjson/quarkus-logging-json?logo=apache-maven&style=for-the-badge)](https://search.maven.org/artifact/io.quarkiverse.loggingjson/quarkus-logging-json)
-[![Sonar Coverage](https://img.shields.io/sonar/coverage/quarkiverse_quarkus-logging-json?logo=sonarcloud&server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge)](https://sonarcloud.io/dashboard?id=quarkiverse_quarkus-logging-json)
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-
 # Quarkus Logging Json
 
 Quarkus logging extension outputting the logging in json.
@@ -13,46 +8,12 @@ Quarkus logging extension outputting the logging in json.
 | Quarkus Version | Use version  |
 |-----------------|--------------|
 | 3.x.x           | 3.x.x        |
-| 2.x.x           | 1.x.x, 2.x.x |
+
 
 # Configuration
 
 The extension is enabled by default for console, when added to the project.
 Console logging can be disabled using configuration: `quarkus.log.json.console.enable=false`
-
-To see additional configuration options take a look
-at [Config](https://quarkiverse.github.io/quarkiverse-docs/quarkus-logging-json/dev/index.html)
-
-## Elastic Common Scheme
-
-```properties
-quarkus.log.json.log-format=ecs
-```
-
-# Add additional fields to all log messages
-
-If you want to add a static field to all the log message, that is possible using the configuration.
-
-```properties
-quarkus.log.json.additional-field.serviceName.value=service-a
-# type is by default STRING - Other is INT, LONG, FLOAT, DOUBLE 
-quarkus.log.json.additional-field.buildNumber.type=INT
-quarkus.log.json.additional-field.buildNumber.value=42
-```
-
-# Structured argument
-
-If you want to do structured logging of arguments, then the argument send with your logging, can implement
-`io.quarkiverse.loggingjson.providers.StructuredArgument`. Then it is possible to use the JsonGenerator to format the
-argument in json.
-
-## Simple usage
-
-```java
-
-...
-        log.info("Test log of structured arg",kv("key", "value"));
-```
 
 # Custom log handler
 
