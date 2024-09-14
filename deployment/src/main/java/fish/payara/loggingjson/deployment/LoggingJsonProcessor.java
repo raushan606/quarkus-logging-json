@@ -31,7 +31,7 @@ class LoggingJsonProcessor {
     @BuildStep
     @Record(ExecutionTime.RUNTIME_INIT)
     LogConsoleFormatBuildItem setUpConsoleFormatter(Capabilities capabilities, LoggingJsonRecorder recorder,
-                                                    Config config) {
+            Config config) {
         return new LogConsoleFormatBuildItem(recorder.initializeConsoleJsonLogging(config, jsonFactory(capabilities)));
     }
 
@@ -49,7 +49,7 @@ class LoggingJsonProcessor {
 
     @BuildStep
     void discoverJsonProviders(BuildProducer<AdditionalBeanBuildItem> beans,
-                               CombinedIndexBuildItem combinedIndexBuildItem) {
+            CombinedIndexBuildItem combinedIndexBuildItem) {
         Collection<ClassInfo> jsonProviders = combinedIndexBuildItem.getIndex()
                 .getAllKnownImplementors(LoggingJsonDotNames.JSON_PROVIDER);
         for (ClassInfo provider : jsonProviders) {
