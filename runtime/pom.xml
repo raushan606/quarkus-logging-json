@@ -11,7 +11,7 @@
 
     <artifactId>quarkus-logging-json</artifactId>
     <name>Quarkus Logging JSON - Runtime</name>
-    <description>Logging in JSON with support for custom fields</description>
+    <description>Logging in JSON with support for Payara Log Format</description>
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>

@@ -22,11 +22,6 @@
         <maven.javadoc.failOnError>false</maven.javadoc.failOnError>
         <quarkus.version>3.12.3</quarkus.version>
         <jacoco.version>0.8.12</jacoco.version>
-        <!-- Sonar properties -->
-        <sonar.projectKey>quarkiverse_quarkus-logging-json</sonar.projectKey>
-        <sonar.moduleKey>${project.artifactId}</sonar.moduleKey>
-        <sonar.organization>quarkiverse</sonar.organization>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
     <modules>
@@ -34,12 +29,6 @@
         <module>runtime</module>
         <module>docs</module>
     </modules>
-    <scm>
-        <connection>scm:git:git@github.com:quarkiverse/quarkus-logging-json.git</connection>
-        <developerConnection>scm:git:git@github.com:quarkiverse/quarkus-logging-json.git</developerConnection>
-        <url>https://github.com/quarkiverse/quarkus-logging-json</url>
-        <tag>HEAD</tag>
-    </scm>
     <dependencyManagement>
         <dependencies>
             <dependency>
